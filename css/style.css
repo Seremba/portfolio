@@ -7,15 +7,16 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-secondary: 'Poppins', sans-serif;
     
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
+    --clr-light: #FDFDFF;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #01EE0C;
+    /* --clr-accent: #01EE0C; */
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -50,6 +51,12 @@ body {
     font-size: var(--fs-body);
     line-height: 1.6;
 }
+body.dark {
+    background: var(--clr-dark);
+    color: var(--clr-accent);
+  }
+   
+
 
 section {
     padding: 5em 2em;
@@ -66,6 +73,7 @@ strong { font-weight: var(--fw-bold) }
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
+
 
 /* Buttons */
 
@@ -124,6 +132,18 @@ h3 { font-size: var(--fs-h3) }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+}
+
+body.dark
+.section__subtitle--intro
+ {
+    background: var(--clr-light);
+    color: var(--clr-accent);
+}
+body.dark
+.section__subtitle--about{
+    background: var(--clr-light);
+    color: var(--clr-accent);
 }
 
 .section__subtitle--work {
@@ -325,6 +345,7 @@ header {
     margin: 0 auto;
 }
 
+
 @media (min-width: 800px) {
     .services {
         display: flex;
@@ -474,3 +495,90 @@ margin-left: auto;
 margin-right: auto;
 }
 
+/* form  */
+
+form {
+   
+    margin: 0 auto;
+    width: 600px;
+    /* Form outline */
+    padding: 1em;
+    border: solid 1px var(--clr-accent);
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: flex-start;
+    align-content: center;
+    justify-content: center;
+    margin-right: 10px;
+    font: var(--ff-secondary);
+}
+  
+  input, 
+  textarea {
+    
+    font: var(--ff-secondary);
+    width: 800px;
+    box-sizing: border-box;
+  }
+  
+  
+  textarea {
+    vertical-align: top; 
+    height: 5em;
+  }
+  
+ 
+  li button{
+    color: var(--clr-dark);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--clr-accent);
+    padding: 10px 50px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    }
+
+    li button:hover {
+        background: var(--clr-light);
+        color: var(--clr-accent);
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+        }
+  
+        .footer--msg{
+            font-size: 35px;
+            color: var(--clr-light);
+            font: var(--ff-secondary);
+            text-transform: capitalize;
+            letter-spacing: 4.5px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+  
+    
+    

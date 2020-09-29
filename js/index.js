@@ -15,3 +15,15 @@ navLinks.forEach(link => {
 AOS.init({
     duration: 1500,
   })
+
+//   dark mode 
+const darkMode = document.querySelector(".dark-mode");
+
+darkMode.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+});
+
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+}
