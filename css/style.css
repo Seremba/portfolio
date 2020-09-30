@@ -399,6 +399,7 @@ header {
         position: relative;
         z-index: 2;
     }
+
 }
 
 /* My Work */
@@ -494,29 +495,36 @@ max-width: 1000px;
 margin-left: auto;
 margin-right: auto;
 }
+/* footer text  */
+
+.footer--msg{
+    font-size: 35px;
+    color: var(--clr-light);
+    font: var(--ff-secondary);
+    text-transform: capitalize;
+    letter-spacing: 4.5px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 /* form  */
 
 form {
-   
+    /* Center the form on the page */
     margin: 0 auto;
-    width: 600px;
+    width: 90%;
     /* Form outline */
     padding: 1em;
-    border: solid 1px var(--clr-accent);
-    border-radius: 1em;
+    border: 1px solid var(--clr-accent);
+    border-radius: .5em;
   }
   
-  ul {
+  ul  {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  li {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
   
   form li + li {
     margin-top: 1em;
@@ -524,25 +532,37 @@ form {
   
   label {
     display: flex;
-    flex-direction: flex-start;
-    align-content: center;
-    justify-content: center;
-    margin-right: 10px;
-    font: var(--ff-secondary);
-}
+    justify-content: start;
+    align-content: flex-start;
+    width: 100%;
+    text-align: start;
+  }
   
   input, 
   textarea {
-    
-    font: var(--ff-secondary);
-    width: 800px;
+    font: 1em sans-serif;
+    width: 100%;
     box-sizing: border-box;
+    border: 1px solid var(--clr-accent);
   }
   
+  input:focus, 
+  textarea:focus {
+    border-color: #303030;
+  }
   
   textarea {
-    vertical-align: top; 
+    vertical-align: top;
+  
     height: 5em;
+  }
+  
+  .button {
+    padding-left: none;
+  }
+  
+  button {
+       margin-left: .5em;
   }
   
  
@@ -568,17 +588,20 @@ form {
         box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
         transition: all 0.4s ease 0s;
         }
-  
-        .footer--msg{
-            font-size: 35px;
-            color: var(--clr-light);
-            font: var(--ff-secondary);
-            text-transform: capitalize;
-            letter-spacing: 4.5px;
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 10px;
+
+        @media (min-width: 800px) {
+            form {
+                margin: 0 auto;
+                width: 50%;
+                padding: 1em;
+                border: 1px solid var(--clr-accent);
+                border-radius: .5em;
+              }
         }
   
+     
+        
+
+        
     
     
