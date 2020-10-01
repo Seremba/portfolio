@@ -14,10 +14,8 @@
     --fw-bold: 900;
     
     --clr-light: #FDFDFF;
-    --clr-dark: #303030;
-    --clr-accent: #01EE0C;
-    /* --clr-accent: #01EE0C; */
-    
+    --clr-dark: #303030; 
+    --clr-accent: #01EE0C;   
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
