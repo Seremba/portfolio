@@ -358,7 +358,14 @@ header {
 .about-me__img {
   box-shadow: var(--bs);
 }
-
+.resume_link {
+  text-decoration: none;
+  border-bottom: 4px solid var(--clr-accent);
+  text-transform: capitalize;
+  color: var(--clr-dark);
+  font-style: italic;
+  font-size: 20px;
+}
 @media (min-width: 600px) {
   .about-me {
     display: grid;
@@ -378,7 +385,6 @@ header {
     grid-column: 1 / -1;
     grid-row: 2;
     position: relative;
-    left: 1em;
     width: calc(100% - 2em);
     padding-left: 1em;
     padding-right: calc(200px + 4em);
